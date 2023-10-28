@@ -3,6 +3,8 @@ public class Wizard extends Unit {
 
     public Wizard(String name) {
         super(name);
+        super.power = 25;
+        super.defence = 80;
     }
 
     // Переопределяем метод атаки для мага
@@ -10,8 +12,7 @@ public class Wizard extends Unit {
     public void attack(Unit unit) {
         mana -= 10;
         if (mana != 0) {
-            power = 25;
-            defence = 80;
+
             super.attack(unit);
         }
     }
