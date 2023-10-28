@@ -1,5 +1,5 @@
 public class Unit {
-    protected String name = "Vova";
+    protected String name = "Auto";
     protected int health = 100;
     protected int defence = 100;
     protected int power = 10;
